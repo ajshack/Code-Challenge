@@ -3,7 +3,9 @@
    v2.0 | 20110126
    License: none (public domain)
 */
-
+*{
+    box-sizing: border-box;
+}
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -30,7 +32,9 @@ footer, header, hgroup, menu, nav, section {
 	display: block;
 }
 body {
-	line-height: 1;
+    line-height: 1;
+    font-family: 'Kumbh Sans', sans-serif;
+    font-weight: 400;
 }
 ol, ul {
 	list-style: none;
@@ -49,33 +53,57 @@ table {
 }
 
 
-/* My custom styles */
+/* My custom class styles */
+
 .profile-pic {
     border-radius:  50%;
     border: 5px solid white;
-
-
 }
-
+/* Center container */
 .container{
-  display: block; 
-  width: 75%;
-
+  display: flex; 
+  width: 100%;
+  height: 650px;
   margin-left: auto;
   margin-right: auto;
+  background-color: darkcyan ;
     /* background-position: top, bottom;
     background-repeat: no-repeat; */
+    align-content: space-around;
 }
 
 .card {
-    background-image: url(./images/bg-pattern-card.svg), url(./images/bg-pattern-top.svg);
-    background-repeat: no-repeat, no-repeat;
-    background-position:  top, bottom;
+    background-image: url(./images/bg-pattern-card.svg);
+     background-repeat: no-repeat;
+    background-position:  top; 
     text-align: center;
+  height: 75%;
+    padding-top: 100px;
+    margin-top: 100px;
+    background-color: white;
+    position: absolute;
+    top: 50px;
+    left: 15%;
+    width: 75%;
+    border-radius: 10px;
+    overflow: hidden;
+
 }
 
-/* text styles */
 
 h2{
     font-weight: bold;
+}
+
+
+.bold {
+    font-weight: 700;
+}
+
+
+
+.section {
+    display:flex;
+    justify-content: space-around;
+    padding-top:30px; 
 }
